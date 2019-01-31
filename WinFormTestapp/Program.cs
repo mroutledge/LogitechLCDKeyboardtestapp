@@ -30,9 +30,9 @@ namespace SimpleLogitechLcdApp
 
         //track button keypress
         private bool button1Pressed = false;
-        private bool button2Pressed = false;
-        private bool button3Pressed = false;
-        private bool button4Pressed = false;
+        //private bool button2Pressed = false;
+        //private bool button3Pressed = false;
+        //private bool button4Pressed = false;
 
         /// <summary>
         /// Terminate flag for program
@@ -179,19 +179,19 @@ namespace SimpleLogitechLcdApp
         /// Event handler for Configure button click (for this applet) in the LCD Manager.
         private static void AppletConfigure(object sender, EventArgs e)
         {
-            // No action required
+            // nop
         }
 
         // Event handler for device removal
         private void DeviceRemoval(object sender, LcdDeviceTypeEventArgs e)
         {
-            // No action required
+            // nop
         }
 
         // Event handler for applet enablement or disablement in the LCD Manager
         private void AppletIsEnabledChanged(object sender, EventArgs e)
         {
-            // No action required
+            // nop
         }
 
         /// This event handler is called whenever the soft buttons are pressed or released.
@@ -206,15 +206,15 @@ namespace SimpleLogitechLcdApp
             }
             if ((e.SoftButtons & LcdSoftButtons.Button1) == LcdSoftButtons.Button0)
             {
-                button2Pressed = true;
+                //button2Pressed = true;
             }
             if ((e.SoftButtons & LcdSoftButtons.Button2) == LcdSoftButtons.Button0)
             {
-                button3Pressed = true;
+                //button3Pressed = true;
             }
             if ((e.SoftButtons & LcdSoftButtons.Button3) == LcdSoftButtons.Button0)
             {
-                button4Pressed = true;
+                //button4Pressed = true;
             }
         }
 
